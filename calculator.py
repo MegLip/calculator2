@@ -45,10 +45,6 @@ if __name__ == "__main__":
             args.append(float(arg))
 
         if choice == "1":
-            #x = 0
-            #for num in args:
-           #     x += float(num)
-           #     y = x + num1 + num2 
             result = add(num1, num2, *args) 
             print(f"Sprawdzam, czy podane wartości są liczbami:", {type(num1)}, {type(num2)}, {type(args)})       
             logging.info(f"Dodaję {num1} i {num2} i {sum(args)}")
